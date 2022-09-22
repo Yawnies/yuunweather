@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/norm.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Yuun's Weather</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="header">
+                <h1>Yuun's Weather</h1>
+                <form class="change-location">
+                    <label for="city">Type a city's name here to get its weather!</label>
+                    <input type="text" class="city-input">
+                </form>
+                <p class="error-red display-n">Error: invalid city or API limit reached</p>
+            </div>
+            <div class="card display-n">
+                <img src="svg/300x300cute.png" alt="" class="card-image">
+                <div class="details">
+                    <h2 class="selected-city">Selected City</h2>
+                    <h3 class="weather-type">Current Weather</h3>
+                    <span class="temp huge">0</span><span class="huge"> &deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
